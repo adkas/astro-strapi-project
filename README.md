@@ -11,7 +11,7 @@ This is an example project for Astro 5 and Strapi 5. It is a simple project that
 In the root directory, run:
 
 ```bash
-git clone https://github.com/strapi/astro-strapi-example-project.git
+git clone https://github.com/PaulBratslavsky/astro-strapi-example-project.git
 ```
 
 2. Install the dependencies
