@@ -157,7 +157,7 @@ async function getAllArticles(page: number) {
           },
         },
       },
-      tags: true,
+      contentTags: true,
       blocks: blocksPopulate,
     },
     pagination: {

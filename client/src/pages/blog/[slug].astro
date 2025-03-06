@@ -24,7 +24,7 @@ interface Article {
     bio: string;
     image: Image;
   };
-  tags: {
+  contentTags: {
     id: number;
     documentId: string;
     title: string;
@@ -62,7 +62,7 @@ const post = Astro.props;
 const blocks = post?.blocks || [];
 const featuredImage = post?.featuredImage || {};
 const author = post?.author || {};
-const tags = post?.tags || [];
+const tags = post?.contentTags || [];
 ---
 
 <BaseLayout>

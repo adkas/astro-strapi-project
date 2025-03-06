@@ -4,8 +4,7 @@
   "info": {
     "singularName": "tag",
     "pluralName": "tags",
-    "displayName": "Tag",
-    "description": ""
+    "displayName": "Tag"
   },
   "options": {
     "draftAndPublish": true

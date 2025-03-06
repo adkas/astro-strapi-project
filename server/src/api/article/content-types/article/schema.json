@@ -32,11 +32,6 @@
     "content": {
       "type": "richtext"
     },
-    "tags": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::tag.tag"
-    },
     "author": {
       "type": "relation",
       "relation": "oneToOne",
@@ -54,6 +49,11 @@
         "blocks.markdown",
         "blocks.featured-articles"
       ]
+    },
+    "contentTags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
     }
   }
 }

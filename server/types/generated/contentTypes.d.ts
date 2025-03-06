@@ -395,6 +395,7 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
       ]
     >;
     content: Schema.Attribute.RichText;
+    contentTags: Schema.Attribute.Relation<'oneToMany', 'api::tag.tag'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -408,7 +409,6 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'title'>;
-    tags: Schema.Attribute.Relation<'oneToMany', 'api::tag.tag'>;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -569,7 +569,6 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
 export interface ApiTagTag extends Struct.CollectionTypeSchema {
   collectionName: 'tags';
   info: {
-    description: '';
     displayName: 'Tag';
     pluralName: 'tags';
     singularName: 'tag';
